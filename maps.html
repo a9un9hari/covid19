@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peta Sebaran Kasus COVID-19 di Kota & Kabupaten Blitar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -228,13 +228,13 @@
             return Httpreq.responseText;          
         }
         function style(feature) {
-            var json_obj = JSON.parse(Get(urlApi + feature.properties.name ));
+            var villageDataDetail = json_arr[feature.properties.name];
 
             var color = window.chartColors.info;
             
-            if(json_obj.confirm > 0){
+            if(villageDataDetail.confirm > 0){
                 color = window.chartColors.danger;
-            }else if(json_obj.pdp > 0){
+            }else if(villageDataDetail.pdp > 0){
                 color = window.chartColors.warning
             }
             
