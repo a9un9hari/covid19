@@ -9,7 +9,7 @@
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin=""/>
     <style>
-        #mapid { height: 700px; width: 1300px; margin: 50px auto; }
+        #mapid { height: 600px; width: 900px; margin: 50px auto; }
 
         .leaflet-tooltip.label-village {
             z-index: 1;
@@ -117,11 +117,8 @@
         };
 
         var urlApi = 'https://covid19jatimapi.agunghari.com/map/blitar';
-
-        var mymap = L.map('mapid').setView([-8.098, 112.157], 12);
-
+        var mymap = L.map('mapid').setView([-8.098, 112.157], 13);
         var json_obj = JSON.parse(Get(urlApi));
-
         var json_arr = [];
 
         for(var i in json_obj)
@@ -146,6 +143,7 @@
                 var villageDataDetail = json_arr[properties.properties.name];
                 var color = window.chartColors.info;
                 var total = villageDataDetail.odp + villageDataDetail.pdp + villageDataDetail.confirm;
+                var typeVillage = (villageDataDetail.city == 'KOTA BLITAR') ? 'Kel. ' : 'Desa ';
 
                 if(villageDataDetail.confirm > 0){
                     color = window.chartColors.danger;
@@ -154,7 +152,7 @@
                 }
 
                 var popupContent = `
-                        <h5 class="text-center">` + properties.properties.name  + `</h5>
+                        <h5 class="text-center">` + typeVillage + properties.properties.name  + `</h5>
                         <table class="table table-sm table-hover">
                             <tbody><tr class="text-success text-center">
                                 <td colspan="3" class="p-0">
@@ -264,10 +262,6 @@
 
         mymap.addLayer(group);
         mymap.addLayer(geojson);
-
-
-
-        // var marker = L.marker([-8.12, 112.20]).addTo(mymap);
     </script>
 </body>
 </html>
