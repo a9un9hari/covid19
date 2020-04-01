@@ -140,6 +140,7 @@
         var group=L.featureGroup();
         kab_geojson.features.map(
             properties => {
+                console.log(properties.properties.name);
                 var villageDataDetail = json_arr[properties.properties.name];
                 var color = window.chartColors.info;
                 var total = villageDataDetail.odp + villageDataDetail.pdp + villageDataDetail.confirm;
@@ -210,7 +211,7 @@
                 });
 
                 var marker = L.marker( latlon, {
-                    title   : ' kota : 01' ,
+                    title   : typeVillage + properties.properties.name  ,
                     icon    : icon,
                 });
 
