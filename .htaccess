@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteRule ^(.*)\.json$ $1.html [L]
 ErrorDocument 404 https://covid19jatim.agunghari.com/maps.json
-Redirect 301 / /maps.json
+RewriteRule ^$ https://covid19jatim.agunghari.com/maps.json [L,R=301]
 DirectoryIndex maps.html
