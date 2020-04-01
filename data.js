@@ -770,8 +770,8 @@ var kab_geojson = {
         "properties": {
             "id": "22",
             "name": "Srengat",
-            "latitude" : -8.102689,
-            "longitude" : 112.086625
+            "latitude" : -8.086204,
+            "longitude" : 112.102589
         }
     }, {
         "type": "Feature",
@@ -1088,8 +1088,8 @@ var kab_geojson = {
         "properties": {
             "id": "22",
             "name": "Binangun",
-            "latitude" : -8.214713, 
-            "longitude" : 112.339826
+            "latitude" : -8.184979, 
+            "longitude" : 112.333647
         }
     }, {
         "type": "Feature",
@@ -1362,8 +1362,8 @@ var kab_geojson = {
         "properties": {
             "id": "22",
             "name": "Sutojayan",
-            "latitude" : -8.179101,
-            "longitude" : 112.226134
+            "latitude" : -8.159221,
+            "longitude" : 112.231112
         }
     }, {
         "type": "Feature",
