@@ -9,7 +9,7 @@
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin=""/>
     <style>
-        #mapid { height: 600px; width: 900px; margin: 50px auto; }
+        #mapid { height: 750px; width: 900px; margin: 50px auto; }
 
         .leaflet-tooltip.label-village {
             z-index: 1;
@@ -117,7 +117,7 @@
         };
 
         var urlApi = 'https://covid19jatimapi.agunghari.com/map/blitar';
-        var mymap = L.map('mapid').setView([-8.098, 112.157], 13);
+        var mymap = L.map('mapid').setView([-8.123375, 112.178988], 11);
         var json_obj = JSON.parse(Get(urlApi));
         var json_arr = [];
 
