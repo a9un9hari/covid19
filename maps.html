@@ -143,7 +143,7 @@
                 var villageDataDetail = json_arr[properties.properties.name];
                 var color = window.chartColors.info;
                 var total = villageDataDetail.odp + villageDataDetail.pdp + villageDataDetail.confirm;
-                var typeVillage = (villageDataDetail.city == 'KOTA BLITAR') ? 'Kel. ' : 'Desa ';
+                var typeVillage = (villageDataDetail.city == 'KOTA BLITAR') ? 'Kel. ' : 'Kec. ';
 
                 if(villageDataDetail.confirm > 0){
                     color = window.chartColors.danger;
