@@ -8,7 +8,7 @@ DirectoryIndex maps.html
 # Enable expirations
 ExpiresActive On 
 # Default directive
-ExpiresDefault "access plus 1 month"
+ExpiresDefault "access plus 12 hours"
 # My favicon
 ExpiresByType image/x-icon "access plus 1 year"
 # Images
@@ -19,5 +19,5 @@ ExpiresByType image/jpeg "access plus 1 month"
 # CSS
 ExpiresByType text/css "access plus 1 month"
 # Javascript
-ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/javascript "access plus 12 hours"
 </IfModule>
