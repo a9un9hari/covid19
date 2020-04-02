@@ -4,8 +4,9 @@ window.chartColors = {
     info: 'rgb(23, 162, 184)'
 };
 
+var zoom = ( screen.width > 750 ) ? 11 : 10;
 var urlApi = 'https://covid19jatimapi.agunghari.com/map/blitar';
-var mymap = L.map('mapid').setView([-8.123375, 112.178988], 11);
+var mymap = L.map('mapid').setView([-8.123375, 112.178988], zoom);
 var json_obj = JSON.parse(Get(urlApi));
 var json_arr = [];
 
