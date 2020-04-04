@@ -3,9 +3,12 @@
 var self = window.self;
 var top = window.top;
 function iniFrame() { 
-    if ( self !== top &&  top != 'https://infoblitar.com/covid-19/') 
+    if ( self !== top ) 
     { 
-        console.log('-_-')
+        if (top != 'https://infoblitar.com/covid-19/') {
+            
+            console.log('-_-')
+        }
     }  
 } 
 iniFrame();
