@@ -2,13 +2,15 @@
 
 var self = window.self;
 var top = window.top;
+var thisUrl = window.location.href;
 console.log(self);
 console.log(top);
+console.log(thisUrl);
 // console.log(document.URL);
 function iniFrame() { 
     if ( self !== top ) 
     { 
-        if (top !== 'https://infoblitar.com/covid-19/') {
+        if (thisUrl !== 'https://covid19jatim.agunghari.com/maps.json?id=13310908covid19997a1964600f785f89718e2fb7c6f7af&pb=!1m18!1m12!1m3!1d63201.04476612399!2d112.13023634555027!3d-8.094823858034259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78eb1801b03d3d%3A0x3027a76e352bcf0!2sBlitar%2C%20Kota%20Blitar%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1585714381558!5m2!1sid!2sid') {
             console.log('-_-')
         }
     }  
