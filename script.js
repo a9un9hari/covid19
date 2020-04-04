@@ -5,7 +5,7 @@
 //         console.log('-_-')
 //     }  
 // } 
-iniFrame();
+// iniFrame();
 console.log(window.location);
 console.log(window.parent.location);
 
