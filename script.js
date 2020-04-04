@@ -1,7 +1,10 @@
 
 
-var self = window.self;
-var top = window.top;
+var self = window.self.document.baseURI;
+var top = window.top.document.baseURI;
+console.log(self);
+console.log(top);
+// console.log(document.URL);
 function iniFrame() { 
     if ( self !== top ) 
     { 
@@ -12,8 +15,6 @@ function iniFrame() {
     }  
 } 
 iniFrame();
-console.log(self);
-console.log(top);
 
 window.chartColors = {
     danger: 'rgb(220, 53, 69)',
