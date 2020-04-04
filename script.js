@@ -6,8 +6,7 @@ function iniFrame() {
     }  
 } 
 iniFrame();
-console.log(window.self);
-console.log(window.top);
+console.log(window.frameElement);
 
 window.chartColors = {
     danger: 'rgb(220, 53, 69)',
