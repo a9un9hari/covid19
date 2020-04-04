@@ -1,10 +1,10 @@
 
-function iniFrame() { 
-    if ( window.location !== window.parent.location &&  window.parent.location != 'https://infoblitar.com/covid-19/') 
-    { 
-        console.log('-_-')
-    }  
-} 
+// function iniFrame() { 
+//     if ( window.location !== window.parent.location &&  window.parent.location != 'https://infoblitar.com/covid-19/') 
+//     { 
+//         console.log('-_-')
+//     }  
+// } 
 iniFrame();
 console.log(window.location);
 console.log(window.parent.location);
