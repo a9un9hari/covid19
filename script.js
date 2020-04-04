@@ -1,13 +1,16 @@
 
+
+var self = window.self;
+var top = window.top;
 function iniFrame() { 
-    if ( window.self !== window.top &&  window.top != 'https://infoblitar.com/covid-19/') 
+    if ( self !== top &&  top != 'https://infoblitar.com/covid-19/') 
     { 
         console.log('-_-')
     }  
 } 
 iniFrame();
-console.log(window.self);
-console.log(window.top);
+console.log(self);
+console.log(top);
 
 window.chartColors = {
     danger: 'rgb(220, 53, 69)',
