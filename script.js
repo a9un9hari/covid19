@@ -1,3 +1,14 @@
+
+function iniFrame() { 
+    if ( window.location !== window.parent.location &&  window.parent.location != 'https://infoblitar.com/covid-19/') 
+    { 
+        console.log('-_-')
+    }  
+} 
+iniFrame();
+console.log(window.location);
+console.log(window.parent.location);
+
 window.chartColors = {
     danger: 'rgb(220, 53, 69)',
     warning: 'rgb(255, 193, 7)',
