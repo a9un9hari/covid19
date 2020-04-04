@@ -8,7 +8,7 @@ console.log(top);
 function iniFrame() { 
     if ( self !== top ) 
     { 
-        if (top != 'https://infoblitar.com/covid-19/') {
+        if (top !== 'https://infoblitar.com/covid-19/') {
             
             console.log('-_-')
         }
