@@ -2,14 +2,15 @@
 
 var self = window.self;
 var top = window.top;
+var urls = (self !== top) ? document.referrer: document.location;
 console.log(self);
 console.log(top);
+console.log(urls.origin);
 // console.log(document.URL);
 function iniFrame() { 
     if ( self !== top ) 
     { 
         if (top !== 'https://infoblitar.com/covid-19/') {
-            
             console.log('-_-')
         }
     }  
