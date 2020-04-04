@@ -2,13 +2,8 @@
 
 var self = window.self;
 var top = window.top;
-if (!window.top.location.origin) {
-    window.top.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
-}
-var urls = (self !== top) ? document.referrer: document.location;
-// console.log(self);
-// console.log(top);
-console.log(window.location.origin);
+console.log(self);
+console.log(top);
 // console.log(document.URL);
 function iniFrame() { 
     if ( self !== top ) 
