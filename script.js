@@ -1,12 +1,11 @@
 
-// function iniFrame() { 
-//     if ( window.location !== window.parent.location &&  window.parent.location != 'https://infoblitar.com/covid-19/') 
-//     { 
-//         console.log('-_-')
-//     }  
-// } 
-// iniFrame();
-console.log(window.frameElement);
+function iniFrame() { 
+    if ( window.self !== window.top &&  window.top != 'https://infoblitar.com/covid-19/') 
+    { 
+        console.log('-_-')
+    }  
+} 
+iniFrame();
 console.log(window.self);
 console.log(window.top);
 
