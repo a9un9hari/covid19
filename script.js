@@ -1,7 +1,7 @@
 
 
-var self = window.self.document.baseURI;
-var top = window.top.document.baseURI;
+var self = window.self;
+var top = window.top;
 console.log(self);
 console.log(top);
 // console.log(document.URL);
